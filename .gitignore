@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.ipynb_checkpoints/
+data/Online Retail.xlsx
+*.zip
+*.ipynb
+.DS_Store

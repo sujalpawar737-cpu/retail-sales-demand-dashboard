@@ -1,0 +1,20 @@
+{
+  "original_rows": 541909,
+  "included_rows": 530104,
+  "cancellation_coded_rows": 9288,
+  "missing_customer_id": 135080,
+  "nonpositive_price_rows": 1181,
+  "nonpositive_quantity_rows": 1336,
+  "distinct_countries_clean": 38,
+  "distinct_products_clean": 3922,
+  "distinct_orders_clean": 19960,
+  "first_date_clean": "2010-12-01T08:26:00",
+  "last_date_clean": "2011-12-09T12:50:00",
+  "cleaning_policy": [
+    "Keep all valid positive-quantity, positive-price invoice lines with product and country fields.",
+    "Exclude cancellation-coded invoices (InvoiceNo beginning with C) from positive-sales analysis.",
+    "Do not discard sales records merely because CustomerID is missing.",
+    "Do not automatically drop exact duplicate-looking lines, since no unique line-item identifier is provided.",
+    "Sales = Quantity multiplied by UnitPrice, in GBP; it is not profit."
+  ]
+}
